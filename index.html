@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self'; media-src 'self'; font-src 'self'; connect-src 'self'; manifest-src 'self'; worker-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-src 'none'" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="theme-color" content="#171c22" />
+    <meta
+      name="description"
+      content="Après l’orage : Chroniques du monde nouveau — livre-jeu interactif et non officiel, en français. Fiction, non une prédiction."
+    />
+    <title>Après l’orage — Chroniques du monde nouveau</title>
+    <meta property="og:title" content="Après l’orage — Chroniques du monde nouveau" />
+    <meta property="og:description" content="Livre-jeu interactif et non officiel, en français : examiner des preuves, décider, et voir la vallée se souvenir. Fiction, non une prédiction." />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="fr_FR" />
+    <!-- og:image : URL RELATIVE tant que le jeu n'est pas hébergé. Au déploiement,
+         la remplacer par l'URL absolue HTTPS du domaine : les plateformes d'aperçu
+         (Facebook, X, Slack…) exigent une URL absolue et ne rendent pas le SVG. -->
+    <meta property="og:image" content="./og/og-partage-1200x630.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <!-- Héros de l'accueil : élément LCP confirmé par Lighthouse — le préchargement
+         démarre le fetch avant l'exécution du JS React (docs/TESTS-PERF.txt). -->
+    <link rel="preload" as="image" href="./img/vallee-avant.jpg" fetchpriority="high" />
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="apple-touch-icon" href="./icons/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" href="./icons/icone-192.png" />
+    <script type="module" crossorigin src="./assets/index-FNEEOCGv.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-eoiIg4UM.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
